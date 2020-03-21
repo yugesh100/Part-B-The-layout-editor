@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical" >
+
+    <!-- Question 1 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Which of the following statements are true for an implicit intent (choose all that apply):"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <RadioGroup
+        android:id="@+id/num_one_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/name_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="The name must not be specified" />
+        <RadioButton
+            android:id="@+id/category_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="The category must not be specified" />
+        <RadioButton
+            android:id="@+id/action_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="The action must not be specified" />
+        <RadioButton
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="The data must not be specified" />
+
+    </RadioGroup>
+
+    <!-- Question 2 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Which of the following correctly describe what an activity is in Android (choose all that apply):"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <RadioGroup
+        android:id="@+id/num_two_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="An event handler that responds to system-side broadcast announcements" />
+        <RadioButton
+            android:id="@+id/device_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="A component that defines a user-facing operation that's displayed on a device screen" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="A component that runs in the background to perform long-running operations or access
+remote resources" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="A message that describes an action to perform or an event that has occurred" />
+
+    </RadioGroup>
+
+    <!-- Question 3 -->
+
+    <TextView
+        android:text="Ignoring the initial xml declaration, what is the outermost xml tag used in the AndroidManifest.xml file?"
+        style="@style/questionstyle" />
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        android:hint="Please enter your answer"
+        android:inputType="text"/>
+
+    <!-- Question 4 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Which of the following lifecycle hook methods may not be called in low memory situations (choose all
+that apply):
+"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <CheckBox
+        android:id="@+id/ganga_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onStop()"
+        android:textSize="16sp"/>
+
+    <CheckBox
+        android:id="@+id/kunti_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onPause()"
+        android:textSize="16sp"/>
+
+    <CheckBox
+        android:id="@+id/radha_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onResume()"
+        android:textSize="16sp"/>
+
+    <CheckBox
+        android:id="@+id/satyavati_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onDestroy()"
+        android:textSize="16sp"
+        android:layout_marginBottom="16sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suppose that your application has brought ActivityA into the foreground. The user then presses a
+button shown by ActivityA, which causes ActivityB to be brought into the foreground, ready for user
+interaction. At this point, what was most likely the last lifecycle method called on ActivityA and on
+ActivityB?"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <!-- Question 5 -->
+
+    <RadioGroup
+        android:id="@+id/num_five_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="ActivityA.onDestroy() and ActivityB.onCreate()." />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="ActivityA.onPause() and ActivityB.onRestart()." />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="ActivityA.onResume() and ActivityB.onDestroy()." />
+        <RadioButton
+            android:id="@+id/stop_resume_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="ActivityA.onStop() and ActivityB.onResume()." />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Submit" />
+
+</LinearLayout>
+
+</ScrollView>
